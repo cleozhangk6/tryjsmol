@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+</head>
 
 <script type="text/javascript">
     
     $(document).ready(function(){
         var Info = {
             color: "#FFFFFF",
-            height: 300,
-            width: 300,
-            script: "load $caffeine",
+            height: 500,
+            width: 500,
+            script: "load example.cif; cartoon ONLY",
             use: "HTML5",
             j2sPath: "jsmol/j2s",
             serverURL: "jsmol/php/jsmol.php",
@@ -20,10 +21,8 @@
         Jmol.setXHTML('myContainer');
         Jmol.getApplet('myJmol', Info);
         $("#somePlace").html(Jmol.getAppletHtml("myJmol", Info));        
-        // $("#somePlace").html("Hello<p>Hello</p>");
     });
 </script>
-</head>
 
 <body>
     <p>Some text</p>
