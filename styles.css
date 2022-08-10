@@ -1,0 +1,164 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+html, body {
+    width: 850px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor:pointer
+}
+
+/* .hero {
+    background-color: #ffffff;
+    background-image: url("images/bg1.png");
+    background-size: cover;
+    width: 850px;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* .hero .container {
+    width: 100%;
+    height: 300px;
+    margin: 0%;
+    margin-right:auto;
+    margin-left: auto;
+    padding-top: 70px;
+    position: relative;
+} */
+
+
+.hero {
+    background-color: #ffffff;
+    background-image: url("images/bg2.png");
+    background-size: cover;
+    margin: 0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .container {
+    height: 220px;
+    margin: 0%;
+    margin-right:auto;
+    margin-left: auto;
+    padding-top: 70px;
+    position: relative;
+}
+
+.nav-bar {
+    background-color: #86CD7D;
+    height: 35px;
+    margin: 0%;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.nav-bar ul {
+    text-align: right;
+    margin: 0%;
+    padding: 7px;
+    padding-right: 15px;
+}
+
+.nav-bar li {
+    display: inline;
+    color: #ffffff;
+    font-size: 20;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.nav-bar ul a {
+    color: #ffffff
+}
+
+.nav-bar ul a:hover {
+    color: #558A5D;
+}
+
+/* .float-container {
+    border: 3px solid #ffffff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+} */
+
+.flex-container {
+    display: flex;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.flex-child {
+    flex: 1;
+    /* border: 2px solid yellow; */
+}
+
+.flex-child:first-child {
+    height: 350px;
+    margin-right: 20px;
+}
+
+.left {
+    width: 90%;
+    height: 350px;
+    background-color: #F5F5E7;
+    border-radius: 8%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left .container {
+    width: 80%;
+    margin: 0;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left .container p{
+    text-align: left;
+    line-height: 2;
+    color: #505B6B;
+    font-size: 16px;
+}
+
+.right .container {
+    margin-top: 30px;
+}
+
+#input-uniprot {
+    width: 180px;
+    height: 20px;
+    border: 2px solid #FEDB68;
+    margin-top: 15px;
+}
+
+#example {
+    color: #A0A4A9;
+    font-size: small;
+    margin-top: 2px;
+    padding-left: 5px;
+}

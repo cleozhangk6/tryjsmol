@@ -1,33 +1,65 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
-</head>
-
-<script type="text/javascript">
-    
-    $(document).ready(function(){
-        var Info = {
-            color: "#FFFFFF",
-            height: 500,
-            width: 500,
-            script: "load example.cif; cartoon ONLY",
-            use: "HTML5",
-            j2sPath: "jsmol/j2s",
-            serverURL: "jsmol/php/jsmol.php",
-        };
-        Jmol.setXHTML('myContainer');
-        Jmol.getApplet('myJmol', Info);
-        $("#somePlace").html(Jmol.getAppletHtml("myJmol", Info));        
-    });
-</script>
+    <head>
+        <title>AF-SEGMENT | HOME</title>
+        <meta name="description" content="Welcome to AF-SEGMENT">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
 <body>
-    <p>Some text</p>
-    <div id="somePlace"></div>
-    <p>Some more text</p>
-</body>
 
+
+    <div class="hero">
+        <a href="index.html"><div class="container"></div></a>
+    </div>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a>Downloads</a></li>
+            <li><a>About</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-body">
+        <div class="flex-container">
+            <div class="flex-child">
+                <div class="left">
+                    <div class="container">
+                        <p>AF-SEGMENT is a web server that automatically segments a given AlphaFold model into sub-structures.</p> 
+                        <p>Start by searching a Uniprot ID to retrieve the AlphaFold model or uploading a structural file that is in either PDB or CIF format.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-child">
+                <div class="right">
+                    <div class="container top">
+                        <label for="input-uniprot">Input a UniProt ID:</label>
+                        <form method="GET" action="/search">
+                            <input id="input-uniprot" type="text" name="uniprot"/>
+                            <input class="submit-btm" type="submit" value="Search"/>
+                        </form>
+                        <p id="example">e.g.
+                            <a onclick="populate_uniprot('P43238')">P43238</a>,
+                            <a onclick="populate_uniprot('P07664')">P07664</a>, etc.
+                        </p>
+                    </div>
+                    <div class="container bottom">
+                        <label>...or upload an AlphaFold model:</label>
+                        <form method="POST" action="/" enctype="multipart/form-data">
+                            <input type="file" name="file"/>
+                            <input class="submit-btm" type="submit" value="Upload"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
 </html>
+
+
+
+
+
