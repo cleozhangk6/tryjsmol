@@ -5,9 +5,7 @@
 
 html, body {
     width: 850px;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
     padding: 0;
   }
 
@@ -19,21 +17,22 @@ a:hover {
     cursor:pointer
 }
 
+super {
+    vertical-align: super;
+    font-size: smaller;
+    padding-left: 2px;
+}
 
 .home-header .hero {
     background-color: #ffffff;
     background-image: url("images/bg2.png");
     background-size: cover;
-    margin: 0%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
 .home-header .hero .container {
     height: 220px;
-    margin: 0%;
-    margin-right:auto;
-    margin-left: auto;
+    margin: 0 auto 0 auto;
     padding-top: 70px;
     position: relative;
 }
@@ -41,16 +40,14 @@ a:hover {
 .nav-bar {
     background-color: #86CD7D;
     height: 32px;
-    margin: 0%;
-    margin-right:auto;
-    margin-left: auto;
+    margin: 0 auto 0 auto;
+
 }
 
 .nav-bar ul {
     text-align: right;
     margin: 0%;
-    padding: 7px;
-    padding-right: 15px;
+    padding: 7px 15px 0 0;
 }
 
 .nav-bar li {
@@ -77,8 +74,7 @@ a:hover {
 .flex-container {
     display: flex;
     width: 88%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
 .flex-child {
@@ -91,41 +87,37 @@ a:hover {
     margin-right: 20px;
 }
 
-.left {
+.home-left {
     width: 90%;
     height: 350px;
     background-color: #F5F5E7;
     border-radius: 8%;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
 }
 
-.left .container {
+.home-left .container {
     width: 80%;
-    margin: 0;
-    padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 10px;
+    margin: 0 auto 0 auto;
 }
 
-.left .container p{
+.home-left .container p {
     text-align: left;
-    line-height: 2;
+    line-height: 28px;
     color: #505B6B;
     font-size: 16px;
     font-weight: 500;
 }
 
-.right .container {
+.home-right .container {
     margin-top: 54px;
 }
 
-.right .container form {
+.home-right .container form {
     margin-top: 15px;
 }
 
-.right .submit-btn {
+.home-right .submit-btn {
     width: 68px;
     height: 35px;
     background-color: #FEDB68;
@@ -135,10 +127,10 @@ a:hover {
     font-weight: 600;
 }
 
-.right .submit-btn:hover {
+.home-right .submit-btn:hover {
     cursor: pointer;
-    background-color: #F9B723;
     color: white;
+    background-color: #F9B723;
 
 }
 
@@ -170,7 +162,7 @@ a:hover {
 footer .container{
     width: 96%;
     height: 100px;
-    margin-right:0;
+    margin-right: 0;
     margin-left: auto;
     position: relative;
     background-color: white;
@@ -192,12 +184,103 @@ footer .container{
     background-color: #ffffff;
     background-image: url("images/bg3.png");
     background-size: cover;
-    margin: 0 0 auto auto;
+    margin: 0 auto 0 auto;
 }
 
 .results-header .hero .container {
     height: 80px;
-    margin: 0 0 auto auto;
+    margin: 0 auto 0 auto;
     padding-top: 70px;
     position: relative;
 }
+
+.results-body {
+    width: 100%;
+    /* background-color: #bdc4cf; */
+    margin: 30px auto 50px auto;
+}
+
+.results-body .flex-container {
+    width: 100%;
+}
+
+.results-body .flex-child:first-child {
+    height: 200px;
+}
+
+.jsmol-canvas {
+    background-color: #505B6B;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.results-body h2, h3 {
+    color:#86CD7D;
+    text-align: center;
+}
+
+.results-left {
+    width: 80%;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+
+.results-left mark {
+    background-color: white;
+    padding: 3px;
+    font-weight: 600;
+}
+
+.results-left mark:hover {
+    background-color: #FEDB68;
+}
+
+.results-left table {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.results-left th{
+    border-bottom: 2px solid rgb(181, 202, 194);
+}
+
+.results-left th, td {
+    padding: 7px 10px 7px 10px;
+}
+
+#info-box {
+    width: 95%;
+    height: 200px;
+    background-color: #F5F5E7;
+    border-radius: 8%;
+    margin: 20px auto 0 auto;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#info-box p {
+    padding: 20px 20px 0 20px;
+    text-align: left;
+    color: #505B6B;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#info-box ul {
+    padding: 0 20px 0 36px;
+    text-align: left;
+    line-height: 25px;
+    color: #505B6B;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fa-solid:hover {
+    color: #558A5D;
+    cursor: pointer
+}
+
+
+

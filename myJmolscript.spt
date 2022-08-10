@@ -1,1 +1,1 @@
-load example.cif; cartoon ONLY; select 24-96; color olive; select 195-361; color orange
+load example.cif; cartoon ONLY; select 24-96; color blue; select 195-361; color green; select 389-430; color red 
