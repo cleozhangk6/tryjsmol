@@ -1,33 +1,55 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="jsmol/JSmol.min.js"></script>
+    <meta charset="utf-8">
+    <title>AF-SEGMENT | Results</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jsmol/JSmol.min.js"></script>
 </head>
 
-<script type="text/javascript">
-    
-    $(document).ready(function(){
-        var Info = {
-            color: "#FFFFFF",
-            height: 500,
-            width: 500,
-            script: "myJmolscript.spt",
-            use: "HTML5",
-            j2sPath: "jsmol/j2s",
-            serverURL: "jsmol/php/jsmol.php",
-        };
-        // Jmol.setXHTML('myContainer');
-        // Jmol.getApplet('myJmol', Info);
-        $("#somePlace").html(Jmol.getAppletHtml("myJmol", Info));        
-    });
-</script>
-
 <body>
-    <p>Some text</p>
+
+    <section class="results-header">
+        <div class="hero">
+            <a href="index.html"><div class="container"></div></a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a>Downloads</a></li>
+                <li><a>About</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <div id="somePlace"></div>
-    <p>Some more text</p>
+
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            var Info = {
+                color: "#FFFFFF",
+                height: 500,
+                width: 500,
+                script: "myJmolscript.spt",
+                use: "HTML5",
+                j2sPath: "jsmol/j2s",
+                serverURL: "jsmol/php/jsmol.php",
+            };
+            $("#somePlace").html(Jmol.getAppletHtml("myJmol", Info));        
+        });
+    </script>
+
 </body>
+
+<hr color="#86CD7D">
+
+<footer>
+    <div class="container">
+      <span id="msc_left">MSc Bioinformatics and Systems Biology</span>
+      <img id="ic_logo_right" src="images/Imperial.png" width="200">
+    </div>
+</footer>
 
 </html>

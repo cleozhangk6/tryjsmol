@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AF-SEGMENT | HOME</title>
+        <title>AF-SEGMENT | Home</title>
         <meta name="description" content="Welcome to AF-SEGMENT">
         <link rel="stylesheet" href="styles.css" />
     </head>
 
 <body>
 
+    <section class="home-header">
+        <div class="hero">
+            <a href="index.html"><div class="container"></div></a>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a>Downloads</a></li>
+                <li><a>About</a></li>
+            </ul>
+        </nav>
+    </section>
 
-    <div class="hero">
-        <a href="index.html"><div class="container"></div></a>
-    </div>
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a>Downloads</a></li>
-            <li><a>About</a></li>
-        </ul>
-    </nav>
-
-    <div class="main-body">
+    <section class="home-body">
         <div class="flex-container">
             <div class="flex-child">
                 <div class="left">
@@ -36,7 +37,7 @@
                         <label for="input-uniprot">Input a UniProt ID:</label>
                         <form method="GET" action="/search">
                             <input id="input-uniprot" type="text" name="uniprot"/>
-                            <input class="submit-btm" type="submit" value="Search"/>
+                            <input class="submit-btn" type="submit" value="Submit"/>
                         </form>
                         <p id="example">e.g.
                             <a onclick="populate_uniprot('P43238')">P43238</a>,
@@ -47,16 +48,27 @@
                         <label>...or upload an AlphaFold model:</label>
                         <form method="POST" action="/" enctype="multipart/form-data">
                             <input type="file" name="file"/>
-                            <input class="submit-btm" type="submit" value="Upload"/>
+                            <input class="submit-btn" type="submit" value="Submit"/>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    
     <script src="scripts.js"></script>
 </body>
+
+<hr color="#86CD7D">
+
+<footer>
+    <div class="container">
+      <span id="msc_left">MSc Bioinformatics and Systems Biology</span>
+      <img id="ic_logo_right" src="images/Imperial.png" width="200">
+    </div>
+</footer>
+
 </html>
 
 

@@ -19,29 +19,8 @@ a:hover {
     cursor:pointer
 }
 
-/* .hero {
-    background-color: #ffffff;
-    background-image: url("images/bg1.png");
-    background-size: cover;
-    width: 850px;
-    margin: 0%;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
-
-/* .hero .container {
-    width: 100%;
-    height: 300px;
-    margin: 0%;
-    margin-right:auto;
-    margin-left: auto;
-    padding-top: 70px;
-    position: relative;
-} */
-
-
-.hero {
+.home-header .hero {
     background-color: #ffffff;
     background-image: url("images/bg2.png");
     background-size: cover;
@@ -50,7 +29,7 @@ a:hover {
     margin-right: auto;
 }
 
-.hero .container {
+.home-header .hero .container {
     height: 220px;
     margin: 0%;
     margin-right:auto;
@@ -61,7 +40,7 @@ a:hover {
 
 .nav-bar {
     background-color: #86CD7D;
-    height: 35px;
+    height: 32px;
     margin: 0%;
     margin-right:auto;
     margin-left: auto;
@@ -90,24 +69,16 @@ a:hover {
     color: #558A5D;
 }
 
-/* .float-container {
-    border: 3px solid #ffffff;
-    padding: 20px;
+.home-body {
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
-
-.float-child {
-    width: 40%;
-    float: left;
-    padding: 20px;
-    border: 2px solid red;
-} */
 
 .flex-container {
     display: flex;
-    width: 85%;
+    width: 88%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
 }
 
 .flex-child {
@@ -143,22 +114,90 @@ a:hover {
     line-height: 2;
     color: #505B6B;
     font-size: 16px;
+    font-weight: 500;
 }
 
 .right .container {
-    margin-top: 30px;
+    margin-top: 54px;
+}
+
+.right .container form {
+    margin-top: 15px;
+}
+
+.right .submit-btn {
+    width: 68px;
+    height: 35px;
+    background-color: #FEDB68;
+    border: none;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.right .submit-btn:hover {
+    cursor: pointer;
+    background-color: #F9B723;
+    color: white;
+
 }
 
 #input-uniprot {
     width: 180px;
-    height: 20px;
+    height: 25px;
     border: 2px solid #FEDB68;
-    margin-top: 15px;
+    margin-right: 25px;
+    padding-left: 10px;
+    font-size: small;
+    box-shadow: rgba(17, 10, 1, 0.06) 0px 2px 4px 0px inset;
 }
 
 #example {
     color: #A0A4A9;
     font-size: small;
-    margin-top: 2px;
+    margin-top: 5px;
     padding-left: 5px;
+}
+
+#example a:hover{
+    color: #505B6B
+}
+
+.right label {
+    font-weight: 500;
+}
+
+footer .container{
+    width: 96%;
+    height: 100px;
+    margin-right:0;
+    margin-left: auto;
+    position: relative;
+    background-color: white;
+}
+
+#msc_left {
+    display: block;
+    float: left;
+    margin-top: 40px;
+    color: #7e8692;
+}
+
+#ic_logo_right {
+    float: right;
+    padding-top: 15px;
+}
+
+.results-header .hero {
+    background-color: #ffffff;
+    background-image: url("images/bg3.png");
+    background-size: cover;
+    margin: 0 0 auto auto;
+}
+
+.results-header .hero .container {
+    height: 80px;
+    margin: 0 0 auto auto;
+    padding-top: 70px;
+    position: relative;
 }
